@@ -32,7 +32,7 @@ def choice(n, doors):
 keep_door = []
 change_door = []
 
-number_of_games = 1000000
+number_of_games = 10000
 
 for _ in range(number_of_games):
     doors = create_doors()
@@ -44,8 +44,8 @@ for _ in range(number_of_games):
     change_door.append(doors[change])
 
 print("In {} games:".format(number_of_games))
-print("Not switching door lead to {} winnings".format(sum(keep_door)))
-print("Switching door lead to {} winnings".format(sum(change_door)))
+print("Not switching door led to {} winnings".format(sum(keep_door)))
+print("Switching door led to {} winnings".format(sum(change_door)))
 
 
 
